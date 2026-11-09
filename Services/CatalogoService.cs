@@ -47,7 +47,7 @@ public class CatalogoService
     {
         return await _context.Jogos
         .Include(j => j.Genero)
-        .Where(j => j.Titulo.Contains(busca))
+        .Where(j => EF.Functions.Like(j.Titulo, $"%{busca}%"))
         .ToListAsync();
     }
 
