@@ -21,12 +21,12 @@ public class Jogo
     }
 
     public Jogo (string titulo, int anoLancamento, Genero genero)
-    {
-        this.Titulo = titulo;
-        this.anoLancamento = anoLancamento;
-        this.Genero = genero;
-        this.GeneroId = GeneroId;
-    }
+{
+    this.Titulo = titulo;
+    this.anoLancamento = anoLancamento;
+    this.Genero = genero;
+    this.GeneroId = GeneroId;
+}
 
     public void AdicionarPlataforma(Plataforma plataforma)
     {

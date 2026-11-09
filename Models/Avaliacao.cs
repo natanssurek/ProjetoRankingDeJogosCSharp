@@ -18,8 +18,10 @@ public class Avaliacao
     public Avaliacao(Jogo jogo, int nota, string autor)
     {
         if (nota < 0 || nota > 10)
-            throw new ArgumentException("A nota deve estar entre 0 e 10");
-
+        {
+         throw new ArgumentException("A nota deve estar entre 0 e 10");   
+        }
+            
         Jogo = jogo;
         JogoId = jogo.Id;
         Nota = nota;
